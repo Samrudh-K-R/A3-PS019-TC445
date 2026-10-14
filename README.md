@@ -1,6 +1,6 @@
-# AIORI-3-HACKATHON-PROJECTS
+# A3-PS019-TC445
 
-This repository will contain the code and resources for the AIORI-3 hackathon that will be developed during the AIORI-3.
+This repository contains the code and resources for **PS-019: Personal-Data Discovery and Privacy Evidence Inventory** developed by Team Subnet Sovereigns for the AIORI-3 Hackathon.
 
 **PS-019: Personal-Data Discovery and Privacy Evidence Inventory**
 
@@ -18,15 +18,16 @@ AIORI Hackathon 3 | Problem PS-019 (Cybersecurity)
 | Pranav Sarpangala | Metadata linking, evaluation, repository | spranav1214@gmail.com |
 | Dr. Animesh Giri | Mentor, PES University (EC Campus) | animeshgiri@pes.edu |
 
-**Team ID:** A3-PS019-TC445
+**Team ID:** A3-PS019-TC445  
 **Institution:** PES University, Electronic City Campus, Bengaluru
 
 ### Submission links
 
 | Item | Link |
 |---|---|
-| Team introduction video (YouTube) | `<paste YouTube link here>` |
-| Project report (PDF, organisers' format) | [`docs/A3-PS019-TC445.pdf`](docs/A3-PS019-TC445.pdf) |
+| Team introduction video (YouTube) | [https://youtu.be/7M6-GzHDf4o](https://youtu.be/7M6-GzHDf4o) |
+| GitHub repository | [https://github.com/aiori-hackathon/A3-PS019-TC445](https://github.com/aiori-hackathon/A3-PS019-TC445) |
+| Project report (PDF, organisers' format) | [`Proposed-structure-hackathon-A3-PS019-TC445.pdf`](Proposed-structure-hackathon-A3-PS019-TC445.pdf) |
 
 ### 1. Problem understanding
 
@@ -92,12 +93,12 @@ See slide 4 of the report for the component diagram. Inputs (CSV, SQLite) flow t
 
 - [x] Problem understanding and proposed solution documented
 - [x] Report PDF prepared in the organisers' template
-- [ ] Private repository created and named `A3-PS019-TC445`
-- [ ] `aiori-hackathon` added as collaborator, then ownership transferred
-- [ ] Report PDF uploaded to the repository
-- [ ] Team introduction video recorded and uploaded to YouTube
-- [ ] YouTube link added to this README
-- [ ] Mentor confirmation of the five data classes
+- [x] Private repository created and named `A3-PS019-TC445`
+- [x] `aiori-hackathon` added as collaborator, then ownership transferred
+- [x] Report PDF uploaded to the repository
+- [x] Team introduction video recorded and uploaded to YouTube
+- [x] YouTube link added to this README
+- [x] Mentor confirmation of the five data classes
 
 ### 6. References
 
