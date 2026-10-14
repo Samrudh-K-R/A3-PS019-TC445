@@ -25,7 +25,7 @@ AIORI Hackathon 3 | Problem PS-019 (Cybersecurity)
 
 | Item | Link |
 |---|---|
-| Team introduction video (YouTube) | `<paste YouTube link here>` |
+| Team introduction video (YouTube) | `<[paste YouTube link here](https://youtu.be/7M6-GzHDf4o)>` |
 | Project report (PDF, organisers' format) | [`docs/A3-PS019-TC445.pdf`](docs/A3-PS019-TC445.pdf) |
 
 ### 1. Problem understanding
