@@ -2,23 +2,116 @@
 
 This repository will contain the code and resources for the AIORI-3 hackathon that will be developed during the AIORI-3.
 
-## PS-019: Personal-Data Discovery and Privacy Evidence Inventory
+**PS-019: Personal-Data Discovery and Privacy Evidence Inventory**
 
-### Project Overview
-Our solution is a data discovery scanner designed to identify stored Personally Identifiable Information (PII) within synthetic structured datasets and link it to declared business purposes and retention schedules[cite: 2]. The tool generates a technical privacy evidence inventory for human review, clearly distinguishing technical evidence from legal interpretation without making automated compliance decisions[cite: 2].
+---
 
-### Team Members
-* Samrudh K R
-* Pranav Sarpangala
+## Team A3-PS019-TC445: Subnet Sovereigns
 
-### Core Capabilities
-* **Multi-Format Scanning:** Inspects synthetic CSV files and one structured SQL database[cite: 2].
-* **PII Classification:** Uses configurable rules to identify candidate personal-data fields across 5 predefined data classes[cite: 2].
-* **Metadata Mapping:** Links discovered fields directly to their declared business purposes and retention metadata[cite: 2].
-* **Gap Analysis:** Automatically flags any missing purpose or retention information within the inventory report[cite: 2].
-* **Performance Evaluation:** Evaluates the scanner using a manually labelled test set to report per-class precision and recall metrics[cite: 2].
+AIORI Hackathon 3 | Problem PS-019 (Cybersecurity)
 
-### Tech Stack
-* **Language:** Python
-* **Data Processing:** Pandas (CSV), SQLAlchemy/SQLite (SQL database)
-* **Detection:** Custom RegEx and heuristic rules
+> **Stage 1: Orientation.** This repository currently holds our problem understanding, proposed solution and team introduction. The prototype will be built in the next stage.
+
+| Name | Role | Email |
+|---|---|---|
+| Samrudh K R | Scanner core and detection engine | samrudhsamrudh7@gmail.com |
+| Pranav Sarpangala | Metadata linking, evaluation, repository | spranav1214@gmail.com |
+| Dr. Animesh Giri | Mentor, PES University (EC Campus) | animeshgiri@pes.edu |
+
+**Team ID:** A3-PS019-TC445
+**Institution:** PES University, Electronic City Campus, Bengaluru
+
+### Submission links
+
+| Item | Link |
+|---|---|
+| Team introduction video (YouTube) | `<paste YouTube link here>` |
+| Project report (PDF, organisers' format) | [`docs/A3-PS019-TC445.pdf`](docs/A3-PS019-TC445.pdf) |
+
+### 1. Problem understanding
+
+Organisations keep personal data in database tables and legacy CSV files, often with no record of why it is held or for how long. Regex-only scanners make this worse: any 12-digit order ID looks like an Aadhaar number, so reviewers drown in false positives.
+
+PS-019 asks for a scanner that:
+- finds five predefined classes of personal data in synthetic CSV files and one SQL database;
+- uses configurable detection rules;
+- links each finding to declared purpose and retention metadata, and flags what is missing;
+- reports per-class precision and recall on a small labelled set;
+- keeps **evidence** (what the scanner found) separate from **legal interpretation** (what it means).
+
+**Out of scope, by design:** no legal compliance decision, no lawful-basis determination and no universal data-flow inference. The output is a technical evidence inventory for a human reviewer.
+
+### 2. Proposed solution
+
+A modular Python pipeline with four phases.
+
+```
+CSV files + SQLite DB
+        |
+        v
+ 1. Ingest  ->  2. Detect (two passes)  ->  3. Link  ->  4. Report
+                       ^                        ^
+                 rules (YAML)          declarations (JSON)
+```
+
+| Phase | Plan |
+|---|---|
+| **Ingest** | Read the SQLite schema (`PRAGMA table_info`) and stream CSV files in chunks, so memory stays flat. |
+| **Detect** | Pass 1: regex finds candidates. Pass 2: a checksum or context check validates them. Rules and thresholds are configured in YAML. |
+| **Link** | Compare findings with a declarations file (purpose, retention). Mark each finding matched, partial or orphan, and flag missing metadata. |
+| **Report** | Produce an evidence inventory, a gap report, and per-class precision and recall. |
+
+#### Data classes (working assumption: to be confirmed with our mentor)
+
+| Class | Pass 1: candidate | Pass 2: validation |
+|---|---|---|
+| Aadhaar number | 12 digits, first digit 2-9 | Verhoeff checksum |
+| Credit card number | 13-19 digit string | Luhn checksum |
+| Email address | RFC 5322-style regex | Domain syntax checks |
+| Phone number | Digit string plus column-name hint | E.164 parse |
+| Contextual PII (name, address, date of birth) | Column name and column type | Confidence weighting |
+
+The problem statement does not list the five classes, so this table may change after mentor confirmation.
+
+### 3. Architecture
+
+See slide 4 of the report for the component diagram. Inputs (CSV, SQLite) flow through ingestion, detection and linking into an evidence inventory. Human-supplied rules, declarations and a labelled test set feed the pipeline, and no lawful-basis logic exists anywhere in it.
+
+### 4. Plan
+
+| Phase | Milestone |
+|---|---|
+| 1 | Private repository; add `aiori-hackathon`; transfer ownership (this stage) |
+| 2 | Synthetic CSV and SQLite data, declarations JSON, labelled test set |
+| 3 | Ingestion and dual-pass detection with YAML rules |
+| 4 | Metadata linker, gap flags, evidence inventory |
+| 5 | Precision and recall evaluation; rule tuning |
+| 6 | Prototype demo with pseudocode shared with the mentor |
+
+### 5. Stage 1 checklist
+
+- [x] Problem understanding and proposed solution documented
+- [x] Report PDF prepared in the organisers' template
+- [ ] Private repository created and named `A3-PS019-TC445`
+- [ ] `aiori-hackathon` added as collaborator, then ownership transferred
+- [ ] Report PDF uploaded to the repository
+- [ ] Team introduction video recorded and uploaded to YouTube
+- [ ] YouTube link added to this README
+- [ ] Mentor confirmation of the five data classes
+
+### 6. References
+
+1. Government of India. *The Digital Personal Data Protection Act, 2023.* Act No. 22 of 2023.
+2. Press Information Bureau. "DPDP Rules, 2025 Notified." 17 Nov 2025.
+3. MeitY. Data Protection Framework. meity.gov.in/data-protection-framework
+4. ISO/IEC 27701:2019. Privacy information management.
+5. NIST. *Privacy Framework, Version 1.0.* 2020.
+6. Microsoft Presidio. microsoft.github.io/presidio
+7. J. Verhoeff. "Error Detecting Decimal Codes." *Mathematical Centre Tracts* 29, 1969.
+8. H. P. Luhn. "Computer for Verifying Numbers." US Patent 2,950,048, 1960.
+9. IETF RFC 5322. *Internet Message Format.* 2008.
+10. ITU-T Recommendation E.164. 2010.
+11. SQLite. `PRAGMA table_info`. sqlite.org/pragma.html
+
+---
+Built for AIORI Hackathon 3. Thanks to our mentor, Dr. Animesh Giri, PES University.
