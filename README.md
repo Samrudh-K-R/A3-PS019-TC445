@@ -98,7 +98,7 @@ See slide 4 of the report for the component diagram. Inputs (CSV, SQLite) flow t
 - [x] Report PDF uploaded to the repository
 - [x] Team introduction video recorded and uploaded to YouTube
 - [x] YouTube link added to this README
-- [ ] Mentor confirmation of the five data classes
+- [x] Mentor confirmation of the five data classes
 
 ### 6. References
 
