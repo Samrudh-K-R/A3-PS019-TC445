@@ -1,0 +1,44 @@
+{
+  "customers.csv.full_name": {
+    "purpose": "Order fulfilment",
+    "retention": "24 months"
+  },
+  "customers.csv.email": {
+    "purpose": "Order communication",
+    "retention": "24 months"
+  },
+  "customers.csv.mobile": {
+    "purpose": "Delivery updates"
+  },
+  "customers.csv.aadhaar_no": {
+    "purpose": "KYC verification",
+    "retention": "5 years"
+  },
+  "customers.csv.dob": {
+    "purpose": "Age verification",
+    "retention": "24 months"
+  },
+  "customers.csv.address": {
+    "purpose": "Delivery",
+    "retention": "24 months"
+  },
+  "payments.csv.card_number": {
+    "retention": "12 months"
+  },
+  "payments.csv.contact_email": {
+    "purpose": "Payment receipts",
+    "retention": "12 months"
+  },
+  "demo.db:users.name": {
+    "purpose": "Account management",
+    "retention": "Account lifetime"
+  },
+  "demo.db:users.email": {
+    "purpose": "Account management",
+    "retention": "Account lifetime"
+  },
+  "demo.db:users.phone": {
+    "purpose": "Two-factor authentication",
+    "retention": "Account lifetime"
+  }
+}
