@@ -5,7 +5,7 @@ Files
 - `manual_labels.csv`: the answer key. One line per cell that **really contains** personal data: `source,row,column,class`.
   `row` is the data row number starting at 0 (the first data row under the header is 0). A cell not listed = no PII.
 
-Classes: `aadhaar`, `credit_card`, `email`, `phone`, `contextual_pii`.
+Classes: `aadhaar`, `credit_card`, `email`, `phone`, `name`.
 
 What to do (both teammates, about 30 minutes)
 1. Open `manual_test_set.csv` in Excel or Sheets and read every row yourselves.
