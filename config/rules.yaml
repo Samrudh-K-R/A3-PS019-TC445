@@ -1,0 +1,167 @@
+# Detection rules. Edit here to add or tune types; no code change needed.
+# Each type belongs to one of the five official classes (category).
+# pass 1 = regex candidate, pass 2 = validator. Column-name hints add confidence.
+min_confidence: 0.5          # findings below this are dropped
+column_ratio_threshold: 0.2  # a column is reported if >= this share of values match
+
+# placeholder values that are never reported as names/addresses/etc. (lower-case)
+ignore_values: [n/a, na, none, null, nil, anonymous, unknown, "-", test, tbd]
+
+categories:
+  personal_identity: Personal identity
+  contact: Contact information
+  government_id: Government identifiers
+  financial: Financial information
+  location: Location / address
+
+classes:
+  # ---------------- Financial (card first: longest digit runs claim their digits first)
+  credit_card:
+    category: financial
+    label: Card number
+    pattern: '(?<![A-Za-z\d])(?:\d[ -]?){12,18}\d(?!\d)'
+    validator: luhn
+    column_hints: [card, cc_num, credit, pan_card_no]
+    suppress_column_hints: [order, ref, tracking, txn, invoice, account, acct, licence, license, dl_no, driving]
+    base_confidence: 0.6
+  # ---------------- Government identifiers
+  aadhaar:
+    category: government_id
+    label: Aadhaar number
+    pattern: '(?<!\d)[2-9]\d{3}[ -]?\d{4}[ -]?\d{4}(?!\d)'
+    validator: verhoeff
+    column_hints: [aadhaar, aadhar, uid, national_id]
+    suppress_column_hints: [order, ref, tracking, txn, invoice, account, acct]
+    base_confidence: 0.6
+  pan:
+    category: government_id
+    label: PAN (income-tax)
+    pattern: '(?<![A-Za-z0-9])[A-Z]{5}\d{4}[A-Z](?![A-Za-z0-9])'
+    validator: pan
+    column_hints: [pan, permanent_account]
+    base_confidence: 0.6
+  passport:
+    category: government_id
+    label: Passport number
+    pattern: '(?<![A-Za-z0-9])[A-PR-WY][1-9]\d{6}(?![A-Za-z0-9])'
+    validator: none
+    require_hint: true
+    column_hints: [passport]
+    base_confidence: 0.55
+  voter_id:
+    category: government_id
+    label: Voter ID (EPIC)
+    pattern: '(?<![A-Za-z0-9])[A-Z]{3}\d{7}(?![A-Za-z0-9])'
+    validator: none
+    require_hint: true
+    column_hints: [voter, epic]
+    base_confidence: 0.55
+  driving_licence:
+    category: government_id
+    label: Driving licence number
+    pattern: '(?<![A-Za-z0-9])[A-Z]{2}[ -]?\d{2}[ -]?\d{4}\d{7}(?!\d)'
+    validator: dl
+    require_hint: true
+    column_hints: [licence, license, driving, dl_no]
+    base_confidence: 0.55
+  # ---------------- Financial
+  bank_account:
+    category: financial
+    label: Bank account number
+    pattern: '(?<!\d)\d{9,18}(?!\d)'
+    validator: none
+    require_hint: true
+    column_hints: [account, acct, acc_no, a_c]
+    suppress_column_hints: [order, ref, tracking, txn, invoice]
+    base_confidence: 0.55
+  ifsc:
+    category: financial
+    label: IFSC code
+    pattern: '(?<![A-Za-z0-9])[A-Z]{4}0[A-Z0-9]{6}(?![A-Za-z0-9])'
+    validator: none
+    column_hints: [ifsc]
+    base_confidence: 0.6
+  upi:
+    category: financial
+    label: UPI ID
+    pattern: '(?<![\w.@-])[A-Za-z0-9._-]{2,}@(?:oksbi|okaxis|okhdfcbank|okicici|ybl|ibl|axl|paytm|upi|apl|sbi|hdfcbank|icici)(?![\w.])'
+    validator: none
+    column_hints: [upi, vpa]
+    base_confidence: 0.6
+  # ---------------- Contact
+  email:
+    category: contact
+    label: Email address
+    pattern: '[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}'
+    validator: email
+    column_hints: [email, mail, e_mail]
+    base_confidence: 0.7
+  phone:
+    category: contact
+    label: Phone number
+    pattern: '(?<![\d.])(?:\+?91[ -]?)?[6-9]\d{4}[ -]?\d{5}(?!\d)'
+    validator: e164
+    column_hints: [phone, mobile, contact, tel]
+    suppress_column_hints: [order, ref, tracking, txn, invoice]
+    base_confidence: 0.5
+  # ---------------- Location / address
+  pin_code:
+    category: location
+    label: PIN code
+    pattern: '(?<![\d.])[1-9]\d{5}(?![\d.])'
+    validator: none
+    require_hint: true
+    column_hints: [pincode, pin_code, pin_no, postal, postcode, zip]
+    suppress_column_hints: [order, ref, tracking, txn, invoice]
+    base_confidence: 0.55
+  geo:
+    category: location
+    label: Geo-coordinates
+    pattern: '(?<![\d.])-?\d{1,3}\.\d{3,}\s*,\s*-?\d{1,3}\.\d{3,}(?![\d.])'
+    validator: geo
+    column_hints: [geo, latlon, lat_lon, coord, location]
+    base_confidence: 0.6
+  address:
+    category: location
+    label: Postal address
+    pattern: null          # no value pattern: detected from column name + value shape
+    validator: none
+    column_hints: [address, addr, street]
+    suppress_column_hints: [email, mail, ip, url, web]
+    base_confidence: 0.55
+    value_shape: '^(?=.*[A-Za-z0-9])(?!\d+$).{3,}$'
+  # ---------------- Personal identity (contextual: column name + value shape)
+  name:
+    category: personal_identity
+    label: Person name
+    pattern: null
+    validator: none
+    column_hints: [name, first_name, last_name, full_name, surname]
+    suppress_column_hints: [user, file, product, bank, company, host, brand, table, column, city]
+    base_confidence: 0.55
+    value_shape: '^(?=.*[A-Za-z])(?!\d+$).{3,}$'
+  dob:
+    category: personal_identity
+    label: Date of birth
+    pattern: null
+    validator: none
+    column_hints: [dob, birth, date_of_birth]
+    base_confidence: 0.55
+    value_shape: '^\d{1,4}[-/.]\d{1,2}[-/.]\d{1,4}$'
+  gender:
+    category: personal_identity
+    label: Gender
+    pattern: null
+    validator: none
+    column_hints: [gender, sex]
+    base_confidence: 0.55
+    value_shape: '(?i)^(male|female|m|f|other|non-binary|transgender)$'
+  age:
+    category: personal_identity
+    label: Age
+    pattern: null
+    validator: none
+    column_hints: [age]
+    suppress_column_hints: [package, page, image, usage, message, stage, average]
+    base_confidence: 0.55
+    value_shape: '^(?:[1-9]\d?|1[01]\d|120)$'
