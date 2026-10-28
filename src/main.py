@@ -23,12 +23,16 @@ def cmd_eval(a, hits=None):
         import csv
         with open(os.path.join(a.out, "cell_hits.csv"), newline="", encoding="utf-8") as f:
             hits = [(r["source"], int(r["row"]), r["column"], r["class"]) for r in csv.DictReader(f)]
-    rows = evaluate(hits, a.labels)
+    rows = evaluate(hits, a.labels, load_rules(a.rules))
     with open(os.path.join(a.out, "metrics.json"), "w", encoding="utf-8") as f:
         json.dump(rows, f, indent=2)
-    print(f"{'class':<18}{'TP':>5}{'FP':>5}{'FN':>5}{'prec':>8}{'rec':>8}{'f1':>8}")
+    last = None
     for r in rows:
-        print(f"{r['class']:<18}{r['tp']:>5}{r['fp']:>5}{r['fn']:>5}{r['precision']:>8}{r['recall']:>8}{r['f1']:>8}")
+        if r["level"] != last:
+            last = r["level"]
+            print(f"\n[{'per official class' if last == 'category' else 'per sub-type' if last == 'subtype' else 'overall'}]")
+            print(f"{'class':<20}{'TP':>5}{'FP':>5}{'FN':>5}{'prec':>8}{'rec':>8}{'f1':>8}")
+        print(f"{r['class']:<20}{r['tp']:>5}{r['fp']:>5}{r['fn']:>5}{r['precision']:>8}{r['recall']:>8}{r['f1']:>8}")
 
 
 def main(argv=None):
