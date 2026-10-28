@@ -19,7 +19,7 @@ AIORI Hackathon 3 | Problem PS-019 (Cybersecurity) | PES University, Electronic 
 | Item | Link |
 |---|---|
 | GitHub repository | https://github.com/aiori-hackathon/A3-PS019-TC445 |
-| Team introduction video (YouTube) | `<paste YouTube link here>` |
+| Team introduction video (YouTube) | `https://youtu.be/7M6-GzHDf4o?si=cfKMvYu9hvg11phD` |
 | Project report (PDF) | [`docs/A3-PS019-TC445.pdf`](docs/A3-PS019-TC445.pdf) |
 
 ## What it does
