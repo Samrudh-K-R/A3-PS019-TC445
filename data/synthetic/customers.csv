@@ -1,151 +1,151 @@
-customer_id,full_name,email,mobile,aadhaar_no,dob,address,order_ref,notes
-C1000,Diya Sharma,diya.sharma95@demo.org,7239670711,376846326097,08-09-1994,"8 MG Road, Mysuru",714294294451,Prefers WhatsApp
-C1001,Karthik Shetty,karthik.shetty84@sample.in,+91-74823-34538,6249 3580 3838,04-02-1987,"56 Church Street, Chennai",491257417623,VIP customer
-C1002,Kavya Kulkarni,kavya.kulkarni34@example.com,9575770529,8733 5288 8296,19-04-1997,"159 Church Street, Chennai",147543377362,
-C1003,Sneha Gowda,sneha.gowda11@mail.test,+91 6408157429,9230 4177 8759,20-11-1980,"180 4th Cross, Bengaluru",901158030343,Address verified
-C1004,Sneha Iyer,sneha.iyer60@sample.in,+91-89936-31208,545890068784,23-06-1981,"17 Brigade Road, Pune",648275934229,Alternate contact: vivaan.patel52@demo.org
-C1005,Ishaan Das,ishaan.das59@mail.test,8149926919,6805 1781 1200,05-09-1990,"103 Residency Road, Mysuru",929319141080,
-C1006,Vivaan Reddy,vivaan.reddy20@mail.test,9640389325,8832 4342 0968,22-09-1999,"221 MG Road, Bengaluru",942959595464,Follow up next week
-C1007,Rahul Reddy,rahul.reddy38@sample.in,7487182120,672893704333,27-11-1991,"223 4th Cross, Chennai",317363871943,Prefers WhatsApp
-C1008,Rohan Patel,rohan.patel98@mail.test,+91 6643111853,9129 6855 3855,08-01-1982,"213 Church Street, Chennai",726541280440,
-C1009,Ananya Reddy,ananya.reddy94@sample.in,+91-68166-90353,4907 4575 0362,28-10-1988,"43 Residency Road, Pune",336070141120,
-C1010,Karthik Shetty,karthik.shetty40@sample.in,+91-84704-06376,930584480159,08-01-1977,"142 Brigade Road, Pune",794529888366,Call back on 6631691672 after 6pm
-C1011,Vivaan Nair,vivaan.nair9@example.com,+91-80760-82500,5913 9036 3968,26-07-1981,"63 Church Street, Hyderabad",203484341332,Alternate contact: rohan.shetty74@sample.in
-C1012,Neha Patel,neha.patel55@sample.in,+91-99275-37643,288791424614,07-04-1992,"221 MG Road, Mysuru",252250635901,Call back on 8859629660 after 6pm
-C1013,Neha Iyer,neha.iyer36@sample.in,7938972143,976690793830,06-07-1990,"238 Church Street, Mysuru",333995652670,Call back on 6100140141 after 6pm
-C1014,Ishaan Sharma,ishaan.sharma22@sample.in,+91 6419212169,9570 5971 0967,02-10-1990,"192 Residency Road, Bengaluru",683482989002,Alternate contact: meera.nair8@example.com
-C1015,Priya Sharma,priya.sharma66@example.com,+91-70735-74218,352549800597,20-01-1994,"146 Brigade Road, Pune",559913616724,
-C1016,Rahul Gowda,rahul.gowda27@demo.org,+91 7285201412,4887 8423 3465,19-02-1977,"3 Hosur Road, Pune",334237356171,Prefers WhatsApp
-C1017,Arjun Iyer,arjun.iyer45@example.com,+91 7396776692,4968 2238 3883,01-11-2001,"207 4th Cross, Pune",428799513174,
-C1018,Diya Iyer,diya.iyer34@example.com,+91-67971-63846,439824432346,17-08-1983,"53 4th Cross, Chennai",159468562624,
-C1019,Ananya Das,ananya.das55@demo.org,+91 6003807155,4225 9992 5780,03-12-2003,"144 MG Road, Bengaluru",697640637435,Ref no 4521 logged
-C1020,Vivaan Patel,vivaan.patel75@mail.test,9136843584,627306582725,28-07-1994,"91 Church Street, Pune",270722706393,
-C1021,Sneha Iyer,sneha.iyer23@sample.in,+91-61925-87044,735425608544,28-08-1982,"28 Hosur Road, Bengaluru",998505323632,
-C1022,Vikram Patel,vikram.patel40@mail.test,+91-70254-09494,5446 6107 1311,12-11-1991,"248 Church Street, Chennai",844745947806,
-C1023,Rahul Sharma,rahul.sharma15@demo.org,+91 7623403479,2820 6996 4027,04-07-2003,"112 Outer Ring Road, Pune",308634857005,Address verified
-C1024,Arjun Sharma,arjun.sharma91@sample.in,+91-65582-60221,557398894165,11-11-2002,"236 Residency Road, Pune",890809244118,
-C1025,Meera Menon,meera.menon40@sample.in,+91-84320-74125,619561052661,20-10-1984,"174 4th Cross, Mysuru",703039501013,Ref no 4521 logged
-C1026,Aarav Gowda,aarav.gowda37@mail.test,+91-98437-02118,7621 2665 1205,22-02-1984,"131 Hosur Road, Mysuru",828063322537,
-C1027,Rahul Reddy,rahul.reddy97@mail.test,8241206079,443998735518,15-07-2003,"157 Church Street, Bengaluru",734065014236,
-C1028,Karthik Shetty,karthik.shetty90@sample.in,9429123992,497307028202,25-07-1982,"221 Church Street, Bengaluru",981223723215,
-C1029,Vikram Sharma,vikram.sharma72@mail.test,6490122159,9715 8670 1243,27-12-2003,"229 Hosur Road, Pune",570319440963,
-C1030,Vikram Iyer,vikram.iyer96@sample.in,9278304807,666663475096,18-02-1979,"70 Residency Road, Chennai",354050883222,Alternate contact: ananya.shetty37@mail.test
-C1031,Ishaan Shetty,ishaan.shetty20@mail.test,+91 6445461013,7624 6003 9258,23-01-2002,"232 Church Street, Pune",941301014309,Call back on 9418197538 after 6pm
-C1032,Ishaan Rao,ishaan.rao1@demo.org,+91 8809037759,876169673295,13-06-1996,"112 Hosur Road, Bengaluru",979090220563,Address verified
-C1033,Ishaan Shetty,ishaan.shetty22@sample.in,+91-76681-43326,255434837379,02-05-1987,"222 Hosur Road, Mysuru",333334202984,Call back on 9145706210 after 6pm
-C1034,Vikram Patel,vikram.patel44@sample.in,+91 8807464398,6121 7584 9689,25-11-1976,"58 4th Cross, Bengaluru",133304178029,Call back on 6375767056 after 6pm
-C1035,Sneha Nair,sneha.nair3@mail.test,+91 7135528741,3610 6569 2732,24-12-1978,"43 Outer Ring Road, Pune",217300018982,
-C1036,Aarav Gowda,aarav.gowda74@sample.in,9767741192,397032321466,26-10-2000,"176 Outer Ring Road, Bengaluru",478133512638,Call back on 8912995414 after 6pm
-C1037,Neha Das,neha.das48@example.com,+91 8013585139,9562 8786 0832,14-03-1998,"213 Hosur Road, Mysuru",399146436761,
-C1038,Divya Rao,divya.rao56@demo.org,8914520040,3320 0095 0926,28-06-1980,"87 MG Road, Hyderabad",334022245021,Ref no 4521 logged
-C1039,Kavya Gowda,kavya.gowda44@demo.org,8596776072,5304 3247 5944,15-01-1977,"177 Hosur Road, Hyderabad",341781900773,VIP customer
-C1040,Ishaan Shetty,ishaan.shetty32@demo.org,+91-85081-59580,7762 1821 2328,08-02-1998,"70 Residency Road, Chennai",444424526913,Ref no 4521 logged
-C1041,Diya Shetty,diya.shetty69@mail.test,+91-72323-41238,9999 7180 4676,08-06-1980,"214 Brigade Road, Chennai",114183131325,
-C1042,Rohan Gowda,rohan.gowda6@example.com,8748846217,9773 6209 0813,09-08-1978,"88 Brigade Road, Bengaluru",172250436572,Ref no 4521 logged
-C1043,Ishaan Rao,ishaan.rao10@example.com,+91-71601-99682,6139 5087 3924,25-09-1987,"203 Outer Ring Road, Mysuru",428318986734,
-C1044,Neha Gowda,neha.gowda73@example.com,6818982730,591330959664,23-10-1990,"1 Hosur Road, Hyderabad",135610687504,Alternate contact: priya.menon10@mail.test
-C1045,Sneha Gowda,sneha.gowda91@demo.org,+91-90764-28684,538327906106,09-03-1977,"58 4th Cross, Mysuru",280644769871,Follow up next week
-C1046,Meera Kulkarni,meera.kulkarni96@demo.org,+91 9133523720,6545 4494 0833,02-07-1998,"113 MG Road, Pune",762809324231,Ref no 4521 logged
-C1047,Arjun Sharma,arjun.sharma12@mail.test,+91-68211-55204,667699292591,19-07-1995,"235 Residency Road, Mysuru",640368067420,Ref no 4521 logged
-C1048,Ananya Rao,ananya.rao45@sample.in,+91-83447-33679,3251 5877 2081,27-09-1976,"74 4th Cross, Hyderabad",196442742929,Ref no 4521 logged
-C1049,Rahul Gowda,rahul.gowda42@example.com,+91-99286-90670,2624 5996 3884,25-01-1981,"194 Hosur Road, Hyderabad",702442419256,Call back on 8668548027 after 6pm
-C1050,Rohan Gowda,rohan.gowda57@sample.in,+91-60309-98324,5245 2333 0500,27-02-1989,"105 MG Road, Mysuru",232916613814,Follow up next week
-C1051,Rohan Rao,rohan.rao92@demo.org,+91 8446129354,961176358400,28-02-1983,"131 4th Cross, Mysuru",970902008220,Follow up next week
-C1052,Neha Patel,neha.patel65@demo.org,+91-63036-96046,6809 0634 3019,12-06-1992,"115 Outer Ring Road, Hyderabad",700276967355,
-C1053,Ishaan Rao,ishaan.rao42@mail.test,+91 7613963047,5605 9232 9140,13-11-2000,"181 Church Street, Hyderabad",816489655032,
-C1054,Rohan Rao,rohan.rao5@mail.test,8933833605,9691 4773 5218,03-08-2000,"223 4th Cross, Mysuru",391925506721,Call back on 7440211187 after 6pm
-C1055,Rahul Kulkarni,rahul.kulkarni89@sample.in,+91 6914576023,8470 4767 1304,08-11-1996,"10 Outer Ring Road, Bengaluru",417487972975,
-C1056,Sneha Shetty,sneha.shetty12@sample.in,+91-68164-40738,3233 8042 1340,10-06-1986,"12 Residency Road, Bengaluru",260763575623,
-C1057,Sneha Menon,sneha.menon53@mail.test,7187979290,892855948973,21-05-1989,"37 Brigade Road, Hyderabad",831241060170,Follow up next week
-C1058,Aarav Rao,aarav.rao37@mail.test,+91 6474303740,6963 1167 3525,04-04-1987,"51 Hosur Road, Hyderabad",493298413208,Address verified
-C1059,Meera Shetty,meera.shetty38@example.com,9294721069,2855 1544 8658,20-06-1982,"232 Residency Road, Mysuru",308892683171,
-C1060,Arjun Das,arjun.das97@mail.test,+91-69700-22337,2618 8288 5048,24-07-1980,"24 Residency Road, Chennai",242596327861,
-C1061,Kavya Menon,kavya.menon65@demo.org,+91 7275919523,660624192275,28-09-1986,"174 4th Cross, Hyderabad",967971241676,Call back on 7923568933 after 6pm
-C1062,Ishaan Sharma,ishaan.sharma34@example.com,+91-93957-65839,6540 5027 4044,11-10-1982,"7 Outer Ring Road, Pune",171501122551,Call back on 7506244434 after 6pm
-C1063,Vikram Shetty,vikram.shetty39@sample.in,6150084428,215000708516,14-10-1998,"172 4th Cross, Pune",270624444143,Alternate contact: rohan.singh59@demo.org
-C1064,Neha Das,neha.das13@sample.in,9300368694,7610 6270 8339,22-06-1992,"219 Residency Road, Bengaluru",493611533984,
-C1065,Vivaan Singh,vivaan.singh36@mail.test,+91 6910568697,328616373834,07-02-2001,"33 Church Street, Pune",708876714629,Call back on 8261530104 after 6pm
-C1066,Karthik Kulkarni,karthik.kulkarni28@mail.test,8831471931,221406237847,05-01-1986,"29 4th Cross, Bengaluru",966681384799,VIP customer
-C1067,Sneha Kulkarni,sneha.kulkarni42@example.com,7284936197,459020229652,17-10-1978,"122 Hosur Road, Chennai",651697162395,
-C1068,Sneha Kulkarni,sneha.kulkarni6@demo.org,9690781796,2687 1340 6910,03-02-1985,"126 4th Cross, Hyderabad",261526407509,Prefers WhatsApp
-C1069,Ananya Iyer,ananya.iyer36@demo.org,+91-96414-44618,6706 6816 9617,24-04-1988,"168 4th Cross, Pune",551952938516,Call back on 6915679227 after 6pm
-C1070,Rahul Rao,rahul.rao52@sample.in,+91 6335596237,7372 1635 4905,03-02-1977,"176 Hosur Road, Bengaluru",204934110625,
-C1071,Kavya Iyer,kavya.iyer72@example.com,8719421270,859057021185,04-10-1991,"154 Residency Road, Chennai",268417430757,
-C1072,Divya Nair,divya.nair14@demo.org,+91 8123357166,559301564230,01-03-1983,"169 Church Street, Chennai",940536690954,
-C1073,Meera Patel,meera.patel45@example.com,7934007971,817478736304,06-06-1984,"108 Hosur Road, Chennai",459581516648,Call back on 7403935666 after 6pm
-C1074,Ananya Sharma,ananya.sharma20@mail.test,6723668399,6920 9746 8936,25-09-1978,"107 Residency Road, Mysuru",573928908678,Ref no 4521 logged
-C1075,Diya Gowda,diya.gowda87@sample.in,8048766522,885832540523,10-06-1978,"197 Brigade Road, Chennai",645494046286,Call back on 8226810757 after 6pm
-C1076,Neha Iyer,neha.iyer17@sample.in,+91-75371-52602,751849169448,19-07-1993,"236 MG Road, Chennai",879126063625,Ref no 4521 logged
-C1077,Neha Gowda,neha.gowda15@sample.in,6348717183,9980 6280 4582,17-02-1987,"112 Outer Ring Road, Hyderabad",443041290279,Call back on 6261259074 after 6pm
-C1078,Rahul Nair,rahul.nair43@mail.test,+91-65481-27255,370998407106,08-02-1979,"90 Residency Road, Mysuru",315847739947,
-C1079,Priya Kulkarni,priya.kulkarni20@example.com,+91-78298-39316,9626 1833 8637,15-02-1990,"161 Residency Road, Mysuru",793389003818,
-C1080,Meera Gowda,meera.gowda76@example.com,8544748834,662112711015,20-10-1991,"166 Church Street, Bengaluru",608457480605,Call back on 8082389284 after 6pm
-C1081,Vivaan Rao,vivaan.rao74@mail.test,+91 8649620068,4840 8353 5225,02-04-1997,"22 Outer Ring Road, Mysuru",677412919889,Call back on 8766990485 after 6pm
-C1082,Priya Patel,priya.patel48@demo.org,+91 9438912794,2892 8904 9777,09-12-2002,"174 Hosur Road, Chennai",765317675836,Call back on 6599108439 after 6pm
-C1083,Rohan Patel,rohan.patel11@mail.test,+91-83331-08786,882158221763,27-03-1996,"165 Church Street, Chennai",915816619507,Ref no 4521 logged
-C1084,Ananya Das,ananya.das86@sample.in,+91 8019574893,6438 6962 3449,17-09-2001,"217 Church Street, Bengaluru",140916141812,Alternate contact: rohan.iyer10@demo.org
-C1085,Rahul Kulkarni,rahul.kulkarni17@sample.in,7174211616,463226999532,10-12-2000,"249 Hosur Road, Pune",355331201390,VIP customer
-C1086,Sneha Gowda,sneha.gowda61@mail.test,+91-87283-26405,9703 5960 6368,05-05-1976,"210 Brigade Road, Pune",631034820387,
-C1087,Kavya Menon,kavya.menon14@example.com,8090060226,6193 8470 2403,14-01-1987,"116 Residency Road, Bengaluru",510177997256,Call back on 7876928440 after 6pm
-C1088,Sneha Singh,sneha.singh11@demo.org,+91 7030266145,3980 9351 5215,27-08-1997,"36 MG Road, Chennai",253893447730,
-C1089,Divya Rao,divya.rao79@example.com,+91 6020405269,5207 6600 8398,08-07-1995,"78 MG Road, Bengaluru",786309570762,Call back on 8255164255 after 6pm
-C1090,Vikram Reddy,vikram.reddy15@sample.in,+91-66785-56450,5202 6599 3585,14-03-1996,"91 Brigade Road, Pune",193064274382,Follow up next week
-C1091,Kavya Reddy,kavya.reddy68@example.com,+91 9937732488,2542 6979 2814,25-10-1998,"62 4th Cross, Bengaluru",468322131402,Alternate contact: aarav.patel9@demo.org
-C1092,Rohan Sharma,rohan.sharma46@demo.org,+91-78916-17660,9987 0186 6835,23-08-1976,"208 Brigade Road, Bengaluru",320303658363,
-C1093,Vivaan Nair,vivaan.nair6@demo.org,+91 8553388913,953829416465,14-07-1998,"32 Church Street, Chennai",525014839815,Alternate contact: vivaan.das43@demo.org
-C1094,Rahul Iyer,rahul.iyer64@sample.in,+91-89924-70805,6120 3083 9422,03-06-1996,"76 Residency Road, Bengaluru",436277213022,Call back on 7585698675 after 6pm
-C1095,Vikram Kulkarni,vikram.kulkarni92@sample.in,+91 7740629322,7621 5374 5728,03-11-1995,"112 Residency Road, Bengaluru",501176618180,
-C1096,Priya Sharma,priya.sharma19@sample.in,6135538456,5892 4304 3989,22-08-1986,"9 Outer Ring Road, Mysuru",586929089756,Follow up next week
-C1097,Ananya Kulkarni,ananya.kulkarni18@demo.org,+91-93375-68796,604872581033,09-05-1997,"234 Outer Ring Road, Bengaluru",333844962406,Ref no 4521 logged
-C1098,Meera Shetty,meera.shetty63@mail.test,6145737277,963193442493,22-06-1997,"248 Church Street, Chennai",701574332654,
-C1099,Meera Gowda,meera.gowda21@mail.test,8546272321,330000915860,05-10-2003,"120 Church Street, Pune",169089769417,Alternate contact: divya.sharma47@demo.org
-C1100,Meera Singh,meera.singh92@sample.in,+91 9825884151,387260969396,21-10-1980,"89 Brigade Road, Pune",573000594905,Follow up next week
-C1101,Vivaan Reddy,vivaan.reddy67@mail.test,8176799196,798503948938,09-04-1995,"230 Residency Road, Bengaluru",709697887681,Follow up next week
-C1102,Arjun Iyer,arjun.iyer81@demo.org,+91-65396-33807,419673726943,27-10-1976,"185 Outer Ring Road, Chennai",186021209147,
-C1103,Vivaan Das,vivaan.das99@demo.org,+91-78235-15952,888554101381,16-04-2000,"75 4th Cross, Chennai",855086815695,Follow up next week
-C1104,Ishaan Gowda,ishaan.gowda59@example.com,+91 6169737590,862209384919,24-06-1987,"81 Church Street, Chennai",933785291760,VIP customer
-C1105,Kavya Menon,kavya.menon72@example.com,+91 8259564054,361278324246,14-04-2002,"243 Hosur Road, Pune",275674087343,Call back on 6311612760 after 6pm
-C1106,Rahul Kulkarni,rahul.kulkarni93@demo.org,7819395339,9729 9713 2771,13-09-1989,"128 MG Road, Bengaluru",366144892534,Address verified
-C1107,Karthik Kulkarni,karthik.kulkarni46@example.com,+91 6302104065,974241723994,24-06-1999,"111 Brigade Road, Chennai",501163921597,
-C1108,Vivaan Singh,vivaan.singh7@mail.test,+91 8594018597,3703 7883 2297,22-10-1978,"72 Church Street, Pune",529911973419,
-C1109,Kavya Patel,kavya.patel72@demo.org,+91-72137-36772,864427855527,05-10-2003,"122 Outer Ring Road, Hyderabad",252537935638,Call back on 8863251765 after 6pm
-C1110,Rahul Kulkarni,rahul.kulkarni41@mail.test,+91-96619-62359,6454 9970 0934,12-06-1996,"77 Hosur Road, Bengaluru",741739153942,
-C1111,Meera Shetty,meera.shetty89@example.com,+91-92851-11130,5739 3357 1916,07-01-1989,"9 Outer Ring Road, Bengaluru",560908799623,Alternate contact: ishaan.iyer88@mail.test
-C1112,Rohan Singh,rohan.singh89@mail.test,+91-95388-24588,994756776604,17-07-1985,"84 4th Cross, Hyderabad",293087493940,Follow up next week
-C1113,Vikram Menon,vikram.menon44@demo.org,+91 8655064741,5341 7650 3892,23-04-1997,"242 Residency Road, Chennai",639898813531,VIP customer
-C1114,Rahul Rao,rahul.rao45@demo.org,+91-81308-61323,839283815822,07-09-1983,"192 Hosur Road, Mysuru",718187630594,Alternate contact: ananya.patel57@demo.org
-C1115,Arjun Iyer,arjun.iyer14@mail.test,+91-70545-08960,532804722149,01-09-2004,"121 MG Road, Mysuru",547354950544,Call back on 8770257350 after 6pm
-C1116,Divya Rao,divya.rao84@mail.test,+91 8344851196,286283576766,27-03-2004,"234 Brigade Road, Hyderabad",142604507117,Prefers WhatsApp
-C1117,Ishaan Rao,ishaan.rao24@demo.org,+91 6009950544,3400 9370 0608,05-09-1989,"140 Outer Ring Road, Hyderabad",311625223853,
-C1118,Diya Patel,diya.patel21@sample.in,8771588919,2461 1342 2723,27-07-1991,"45 Outer Ring Road, Hyderabad",195897714803,VIP customer
-C1119,Ishaan Das,ishaan.das13@mail.test,+91 7512662437,5343 8907 3523,23-04-1976,"67 4th Cross, Chennai",231717138423,Alternate contact: arjun.patel39@example.com
-C1120,Vikram Gowda,vikram.gowda21@sample.in,8741193655,683182967656,14-12-1992,"192 Outer Ring Road, Chennai",619316508315,Alternate contact: rohan.rao20@sample.in
-C1121,Karthik Nair,karthik.nair88@example.com,+91-95671-21569,715307988101,19-09-1979,"232 Outer Ring Road, Mysuru",457188967265,
-C1122,Vikram Reddy,vikram.reddy88@mail.test,+91-90976-47841,9776 8273 3513,15-11-2000,"145 MG Road, Pune",895892527950,Call back on 9490483627 after 6pm
-C1123,Aarav Singh,aarav.singh33@example.com,7620956992,249064406679,02-05-1988,"240 MG Road, Hyderabad",942586603917,Prefers WhatsApp
-C1124,Rohan Das,rohan.das94@sample.in,+91 8957062174,9554 3414 3513,06-09-1987,"221 Residency Road, Bengaluru",239710314903,Call back on 7701726890 after 6pm
-C1125,Sneha Sharma,sneha.sharma97@example.com,+91-84971-46648,853824245025,02-11-1988,"240 4th Cross, Bengaluru",944454665058,Alternate contact: kavya.iyer36@mail.test
-C1126,Aarav Nair,aarav.nair27@example.com,6637742679,992761779780,05-09-1984,"139 Brigade Road, Bengaluru",994358913631,Alternate contact: vivaan.singh57@mail.test
-C1127,Rahul Kulkarni,rahul.kulkarni77@demo.org,7324017094,5404 3093 3220,16-01-1986,"174 Hosur Road, Pune",808418719388,Call back on 7672155012 after 6pm
-C1128,Ishaan Menon,ishaan.menon41@sample.in,+91 9160221190,866734893747,26-08-2004,"77 Church Street, Mysuru",714427816253,
-C1129,Neha Singh,neha.singh72@mail.test,+91 9260767346,587317814665,18-12-2001,"217 Residency Road, Bengaluru",156652687190,
-C1130,Arjun Singh,arjun.singh87@example.com,+91-62020-38796,5278 2878 6210,24-08-2004,"55 Brigade Road, Bengaluru",865546108478,Prefers WhatsApp
-C1131,Karthik Singh,karthik.singh31@demo.org,+91 8408732434,7356 8440 1993,25-06-2004,"120 MG Road, Hyderabad",504599351747,Ref no 4521 logged
-C1132,Rahul Singh,rahul.singh6@mail.test,+91 7017415986,818447710419,16-09-1995,"146 Church Street, Mysuru",855671426170,Ref no 4521 logged
-C1133,Rahul Gowda,rahul.gowda98@sample.in,9494811370,7179 0685 9892,25-01-1988,"242 Church Street, Bengaluru",356111913411,Alternate contact: vivaan.menon5@example.com
-C1134,Ananya Shetty,ananya.shetty20@example.com,+91 7543026584,7818 6400 9892,18-07-1975,"5 MG Road, Pune",679892423202,
-C1135,Arjun Menon,arjun.menon37@example.com,9865615974,316827891650,15-10-1982,"21 Residency Road, Hyderabad",868757197171,Alternate contact: arjun.patel35@sample.in
-C1136,Sneha Gowda,sneha.gowda88@example.com,+91 6100395400,8746 3437 5003,28-07-1995,"44 MG Road, Hyderabad",464146123458,Call back on 6754674236 after 6pm
-C1137,Diya Menon,diya.menon6@mail.test,+91-79677-34470,954593116886,22-01-1980,"72 Outer Ring Road, Pune",118530570661,
-C1138,Karthik Kulkarni,karthik.kulkarni19@sample.in,6321346113,5551 8793 4976,17-12-1986,"203 4th Cross, Bengaluru",207604806831,VIP customer
-C1139,Neha Nair,neha.nair10@demo.org,+91 9830598266,2370 8327 5705,06-11-1993,"142 Hosur Road, Hyderabad",519449391948,Address verified
-C1140,Ananya Kulkarni,ananya.kulkarni38@mail.test,+91 6088087644,496121368042,03-01-1984,"82 Residency Road, Bengaluru",497047117241,
-C1141,Arjun Reddy,arjun.reddy17@example.com,+91 7462760731,804436397519,28-07-1975,"153 Outer Ring Road, Chennai",552225040924,Prefers WhatsApp
-C1142,Ishaan Reddy,ishaan.reddy93@mail.test,+91 7735852444,4349 5605 1895,16-02-1986,"71 Hosur Road, Chennai",891333078722,Alternate contact: rohan.reddy22@sample.in
-C1143,Divya Kulkarni,divya.kulkarni79@mail.test,9114860711,6446 4915 7089,14-11-1994,"85 Hosur Road, Chennai",427002164659,
-C1144,Rahul Kulkarni,rahul.kulkarni89@mail.test,9337351729,8471 1031 6113,26-04-1985,"163 Hosur Road, Pune",406557823241,
-C1145,Ishaan Patel,ishaan.patel15@mail.test,+91-77319-83367,2288 1221 7086,27-07-1996,"213 4th Cross, Bengaluru",252468346350,
-C1146,Meera Nair,meera.nair33@mail.test,+91 9847264726,3669 9261 5780,23-09-1994,"140 MG Road, Chennai",216329111631,Ref no 4521 logged
-C1147,Sneha Das,sneha.das86@demo.org,+91-76947-10793,2929 6470 1133,04-01-1978,"85 Church Street, Hyderabad",341629441437,
-C1148,Sneha Rao,sneha.rao48@sample.in,+91-98292-96154,464530005238,15-04-1991,"90 Residency Road, Chennai",484326240720,Alternate contact: ananya.reddy94@mail.test
-C1149,Divya Reddy,divya.reddy57@sample.in,+91 8072127903,297969002619,24-04-1991,"28 4th Cross, Mysuru",706339659651,Call back on 8695752405 after 6pm
+customer_id,full_name,email,mobile,aadhaar_no,dob,address,order_ref,notes,gender,age,pin_code
+C1000,Diya Sharma,diya.sharma95@demo.org,7239670711,376846326097,08-09-1994,"8 MG Road, Mysuru",871590378377,Prefers WhatsApp,Male,53,693850
+C1001,Neha Nair,neha.nair58@demo.org,6814763202,835821103220,20-05-2000,"25 Residency Road, Chennai",516278088865,Alternate contact: rahul.reddy12@sample.in,Male,64,870284
+C1002,Ananya Menon,ananya.menon38@demo.org,7756528252,2329 0487 5418,13-05-1989,"219 Brigade Road, Bengaluru",488136971784,,M,71,721319
+C1003,Karthik Das,karthik.das35@example.com,+91-75735-28321,5608 3135 0513,26-06-1987,"59 Church Street, Bengaluru",889742985454,Alternate contact: sneha.das42@example.com,Male,22,674341
+C1004,Rahul Nair,rahul.nair84@sample.in,+91-99499-21299,934973367170,12-04-1979,"230 Outer Ring Road, Hyderabad",267974663989,Alternate contact: arjun.shetty75@sample.in,Other,49,599061
+C1005,Priya Das,priya.das55@example.com,+91-94097-60584,936632267173,25-05-1999,"30 4th Cross, Pune",273665994394,,M,39,538469
+C1006,Vikram Sharma,vikram.sharma93@demo.org,7545119047,689514288243,01-02-2004,"154 Residency Road, Hyderabad",362241791770,Alternate contact: priya.menon68@example.com,Male,71,731385
+C1007,Ananya Reddy,ananya.reddy94@sample.in,+91-68166-90353,4907 4575 0362,28-10-1988,"43 Residency Road, Pune",539425475482,,Female,52,693447
+C1008,Kavya Rao,kavya.rao67@sample.in,6266186631,314520664597,08-02-2003,"19 4th Cross, Bengaluru",405964900141,Prefers WhatsApp,Male,39,567391
+C1009,Divya Nair,divya.nair70@mail.test,+91 9260916298,813702706277,15-12-1976,"91 Hosur Road, Hyderabad",900593162298,,M,59,507944
+C1010,Rahul Reddy,rahul.reddy32@mail.test,+91 7575832441,4232 8680 4329,04-01-1995,"114 Church Street, Pune",928612436713,Prefers WhatsApp,Other,71,512224
+C1011,Sneha Iyer,sneha.iyer53@sample.in,+91 9229509408,252246718600,10-07-1997,"68 Church Street, Hyderabad",635661484746,,M,68,986752
+C1012,Rohan Nair,rohan.nair38@mail.test,+91-66218-90096,246162203543,06-01-1991,"236 Church Street, Pune",175570100353,Call back on 9539931481 after 6pm,Male,72,608981
+C1013,Sneha Singh,sneha.singh16@mail.test,6665055833,8801 3280 7577,08-05-1987,"53 4th Cross, Chennai",108901504899,,Female,60,759929
+C1014,Vikram Kulkarni,vikram.kulkarni73@example.com,6577280546,6482 9383 3829,10-11-1978,"171 Church Street, Pune",708779044123,Alternate contact: meera.kulkarni84@example.com,Female,34,514029
+C1015,Rohan Gowda,rohan.gowda37@mail.test,+91-82186-10946,6665 9522 4810,21-07-2001,"217 MG Road, Bengaluru",245045852621,,Male,20,543719
+C1016,Arjun Iyer,arjun.iyer95@sample.in,9602269164,398282193587,14-03-1976,"150 Outer Ring Road, Mysuru",848226581356,Address verified,Male,41,546898
+C1017,Sneha Das,sneha.das14@demo.org,+91-96664-30218,417707910235,26-11-2002,"86 Church Street, Hyderabad",963972176017,,M,69,634970
+C1018,Diya Singh,diya.singh5@sample.in,+91 7214289692,731042286263,28-02-1999,"103 Residency Road, Chennai",692034016653,,Male,40,952386
+C1019,Rahul Sharma,rahul.sharma15@demo.org,+91 7623403479,2820 6996 4027,04-07-2003,"112 Outer Ring Road, Pune",579785579472,Address verified,Other,30,705817
+C1020,Aarav Menon,aarav.menon69@mail.test,8463102056,745626105069,22-07-1985,"77 Outer Ring Road, Chennai",311000094454,,Female,62,772667
+C1021,Neha Das,neha.das49@mail.test,+91-84360-19893,239959838645,15-08-1989,"156 4th Cross, Chennai",976000808135,Follow up next week,M,31,962021
+C1022,Priya Das,priya.das11@demo.org,8100273738,618035125735,15-07-2003,"218 Church Street, Bengaluru",523897613735,Call back on 9656350429 after 6pm,M,54,694155
+C1023,Divya Singh,divya.singh32@mail.test,6958486184,8224 1475 2002,05-08-1996,"218 MG Road, Hyderabad",933009077155,Call back on 7985125921 after 6pm,Other,53,941588
+C1024,Vikram Kulkarni,vikram.kulkarni93@sample.in,9963369870,936292773274,16-11-1982,"71 Church Street, Pune",358925230833,,Male,46,593525
+C1025,Arjun Patel,arjun.patel41@example.com,7161953189,820160360948,02-04-2001,"139 Hosur Road, Hyderabad",941301014309,Call back on 9355281184 after 6pm,Female,42,991163
+C1026,Ishaan Rao,ishaan.rao1@demo.org,+91 8809037759,876169673295,13-06-1996,"112 Hosur Road, Bengaluru",686788125561,Address verified,M,69,894919
+C1027,Aarav Singh,aarav.singh76@example.com,+91 6690147183,463852640354,11-07-1983,"55 Hosur Road, Chennai",189485261008,Call back on 9351492250 after 6pm,F,71,833065
+C1028,Divya Sharma,divya.sharma96@example.com,+91-82407-56713,370942322274,20-03-1982,"52 Church Street, Bengaluru",340293786713,,Female,48,573920
+C1029,Vikram Shetty,vikram.shetty33@demo.org,+91-76505-72325,314220803872,13-12-1981,"148 4th Cross, Hyderabad",949102978448,,Male,55,613356
+C1030,Meera Das,meera.das77@example.com,+91-63728-07202,850085852774,27-08-1978,"4 Church Street, Hyderabad",577398461838,Address verified,Female,41,892708
+C1031,Priya Shetty,priya.shetty67@demo.org,+91 9499154414,6126 0410 5022,19-10-1996,"63 Church Street, Hyderabad",460137100173,,Female,39,564789
+C1032,Priya Rao,priya.rao28@demo.org,+91 8365436049,623871042913,23-08-1995,"143 Church Street, Mysuru",422522208302,Call back on 9524606470 after 6pm,M,49,802260
+C1033,Sneha Singh,sneha.singh89@mail.test,+91-87129-21644,7750 4708 2357,09-05-1983,"85 Residency Road, Hyderabad",916557269948,Follow up next week,Female,25,641359
+C1034,Priya Nair,priya.nair28@sample.in,+91-87780-17216,617096163004,09-01-1976,"182 Outer Ring Road, Mysuru",928363733258,Alternate contact: kavya.iyer39@example.com,Other,36,683606
+C1035,Divya Reddy,divya.reddy2@demo.org,+91 9514015466,7345 8039 9705,21-11-1976,"126 MG Road, Pune",229914990914,Call back on 6430256336 after 6pm,Female,27,939824
+C1036,Neha Kulkarni,neha.kulkarni77@mail.test,+91 9483736219,6810 0379 9034,25-04-1995,"16 Outer Ring Road, Bengaluru",290008774121,Follow up next week,Female,34,520585
+C1037,Ananya Iyer,ananya.iyer1@sample.in,+91-97402-06617,955459164321,26-11-1993,"176 Brigade Road, Chennai",697493414595,Alternate contact: meera.shetty59@example.com,M,69,655723
+C1038,Sneha Das,sneha.das20@demo.org,7076675731,4420 5901 9431,09-09-1992,"177 Residency Road, Hyderabad",909309400638,Ref no 4521 logged,Female,46,578385
+C1039,Rahul Kulkarni,rahul.kulkarni33@example.com,+91-62458-05719,278466952363,21-08-2004,"45 Hosur Road, Pune",996079577156,,Male,29,957132
+C1040,Divya Reddy,divya.reddy61@demo.org,+91 9357887167,3251 5877 2081,27-09-1976,"74 4th Cross, Hyderabad",225942501921,Ref no 4521 logged,Female,23,733082
+C1041,Ishaan Menon,ishaan.menon1@sample.in,9058201193,7880 4035 7471,05-05-1989,"53 Residency Road, Pune",795669368396,,M,49,503783
+C1042,Sneha Shetty,sneha.shetty21@demo.org,+91 6592975437,360616853947,17-12-1983,"40 Hosur Road, Chennai",599263022595,,Female,71,861894
+C1043,Rohan Singh,rohan.singh25@mail.test,+91 6296618390,736540455095,18-08-1986,"222 Brigade Road, Hyderabad",364988738014,Alternate contact: meera.kulkarni75@sample.in,Male,53,949441
+C1044,Ishaan Nair,ishaan.nair53@example.com,+91 8799621068,889424429819,11-02-2002,"33 Outer Ring Road, Pune",602126523583,Prefers WhatsApp,F,46,568937
+C1045,Aarav Shetty,aarav.shetty19@sample.in,+91 7080346223,6830 5848 8043,13-06-1995,"219 Residency Road, Pune",778759018230,,M,66,870912
+C1046,Ananya Nair,ananya.nair81@demo.org,7801834280,817086830433,11-01-1984,"232 MG Road, Bengaluru",680869404959,Address verified,Male,41,819080
+C1047,Neha Kulkarni,neha.kulkarni88@mail.test,7187979290,892855948973,21-05-1989,"37 Brigade Road, Hyderabad",417403277612,Follow up next week,Male,60,560981
+C1048,Priya Reddy,priya.reddy57@demo.org,+91 8686055206,6270 6740 6468,19-06-1993,"28 Brigade Road, Hyderabad",536618772435,,Male,62,702875
+C1049,Arjun Sharma,arjun.sharma73@example.com,+91 9894253959,531577978063,21-02-2003,"174 Church Street, Mysuru",584423393396,,M,59,540492
+C1050,Vivaan Kulkarni,vivaan.kulkarni47@mail.test,+91 6976705430,759044980715,27-08-2000,"213 Brigade Road, Chennai",254942230953,Alternate contact: kavya.menon65@demo.org,Male,65,715095
+C1051,Sneha Das,sneha.das93@sample.in,+91 8096961971,274150284985,04-11-1982,"150 Hosur Road, Chennai",343138451678,Address verified,Female,19,973584
+C1052,Ananya Das,ananya.das60@demo.org,9125279834,2835 9129 6617,18-03-1987,"30 MG Road, Mysuru",918566393823,,Female,41,954935
+C1053,Rohan Singh,rohan.singh84@example.com,+91 9661051532,6946 2979 5899,21-06-1976,"176 Residency Road, Pune",601756080094,Alternate contact: vikram.nair47@example.com,Female,35,616011
+C1054,Ananya Das,ananya.das28@example.com,+91 6844814262,521426822639,11-03-2000,"56 Church Street, Mysuru",245975318262,Call back on 7629624046 after 6pm,Other,18,718964
+C1055,Arjun Iyer,arjun.iyer15@example.com,+91 7015956152,545478777003,16-08-1999,"135 MG Road, Bengaluru",651697162395,Alternate contact: vivaan.iyer95@sample.in,Male,50,914293
+C1056,Sneha Kulkarni,sneha.kulkarni6@demo.org,9690781796,2687 1340 6910,03-02-1985,"126 4th Cross, Hyderabad",784080984782,Prefers WhatsApp,Other,27,516540
+C1057,Rahul Singh,rahul.singh77@demo.org,+91-95428-31335,815899021538,13-07-1998,"106 Residency Road, Hyderabad",382029490777,VIP customer,Male,38,840963
+C1058,Kavya Iyer,kavya.iyer88@sample.in,6097951867,3147 3979 7400,18-09-1985,"143 MG Road, Pune",833896555423,,M,25,846346
+C1059,Neha Shetty,neha.shetty7@demo.org,8377577220,5908 5887 4258,19-04-2000,"30 Church Street, Chennai",841369652067,Alternate contact: diya.patel72@demo.org,Female,72,981490
+C1060,Aarav Kulkarni,aarav.kulkarni85@demo.org,+91 6193720285,6469 0764 6474,05-12-1995,"169 Hosur Road, Bengaluru",561177243339,Call back on 7608082645 after 6pm,Male,23,928197
+C1061,Vikram Patel,vikram.patel21@demo.org,+91 8774807770,380888930941,16-10-1989,"114 4th Cross, Hyderabad",226754562231,Alternate contact: vivaan.das11@demo.org,Female,35,698951
+C1062,Kavya Singh,kavya.singh15@demo.org,+91-95657-91188,6302 5983 7169,10-04-1999,"15 MG Road, Mysuru",230258293666,,Female,66,737938
+C1063,Aarav Rao,aarav.rao96@sample.in,+91 7138712095,5751 6305 4442,28-06-1993,"5 Hosur Road, Bengaluru",558015920905,Call back on 6468387228 after 6pm,Female,54,892995
+C1064,Meera Reddy,meera.reddy52@example.com,+91-81845-47422,9980 6280 4582,17-02-1987,"112 Outer Ring Road, Hyderabad",956129010748,Call back on 6261259074 after 6pm,F,37,729041
+C1065,Priya Reddy,priya.reddy66@example.com,+91 7972727126,789416703368,06-11-1990,"155 Brigade Road, Bengaluru",592115068238,Alternate contact: rohan.gowda26@mail.test,Female,66,999598
+C1066,Rahul Das,rahul.das41@mail.test,+91 9073321814,9413 6648 4107,15-08-1976,"130 MG Road, Chennai",774697686009,Address verified,Male,41,710057
+C1067,Ishaan Rao,ishaan.rao75@example.com,+91-99760-84958,5829 8532 5561,23-02-1991,"116 MG Road, Chennai",584075549229,Prefers WhatsApp,M,29,532472
+C1068,Vikram Menon,vikram.menon67@mail.test,+91 8400346767,891647589048,11-02-1992,"166 Residency Road, Bengaluru",765317675836,,M,42,733029
+C1069,Rohan Patel,rohan.patel11@mail.test,+91-83331-08786,882158221763,27-03-1996,"165 Church Street, Chennai",837214063081,Ref no 4521 logged,M,71,912249
+C1070,Neha Menon,neha.menon47@example.com,8331642423,567715125310,17-09-2001,"217 Church Street, Bengaluru",781896098873,Alternate contact: rohan.iyer10@demo.org,M,51,586760
+C1071,Rohan Kulkarni,rohan.kulkarni49@mail.test,+91-71941-81873,463226999532,10-12-2000,"249 Hosur Road, Pune",962466472260,VIP customer,Female,32,931348
+C1072,Divya Nair,divya.nair48@sample.in,+91 9826178355,8708 7944 4539,05-05-1976,"210 Brigade Road, Pune",215681909956,,M,48,772684
+C1073,Diya Gowda,diya.gowda11@mail.test,+91-84824-52834,459403893324,12-01-1988,"57 Church Street, Hyderabad",521919454119,,Male,43,949015
+C1074,Ananya Patel,ananya.patel29@example.com,8999466711,720578823152,15-10-1975,"213 Brigade Road, Hyderabad",266794896461,Call back on 9747401602 after 6pm,Male,19,728266
+C1075,Neha Reddy,neha.reddy37@mail.test,8130833665,5877 0248 2897,19-04-1997,"138 MG Road, Pune",489187643698,Call back on 9640743666 after 6pm,Female,36,800205
+C1076,Sneha Kulkarni,sneha.kulkarni54@mail.test,+91 6562087258,372814314332,12-05-1998,"12 4th Cross, Hyderabad",904194512296,Ref no 4521 logged,Male,40,545193
+C1077,Diya Kulkarni,diya.kulkarni95@demo.org,+91 7047605080,789393339894,21-03-2000,"176 Hosur Road, Hyderabad",320303658363,,Female,22,804847
+C1078,Vivaan Nair,vivaan.nair6@demo.org,+91 8553388913,953829416465,14-07-1998,"32 Church Street, Chennai",862340388025,Alternate contact: vivaan.das43@demo.org,Female,42,724486
+C1079,Divya Patel,divya.patel67@demo.org,+91 6780697625,383453822254,22-05-1984,"27 MG Road, Chennai",588293821738,Address verified,Female,56,821842
+C1080,Kavya Rao,kavya.rao6@demo.org,+91-92948-01573,2905 1661 2576,28-10-1996,"244 MG Road, Mysuru",357986802853,VIP customer,F,46,516545
+C1081,Kavya Patel,kavya.patel50@example.com,+91 7729137330,761727327456,21-05-1982,"94 Hosur Road, Chennai",527425461312,Follow up next week,Male,19,665410
+C1082,Diya Gowda,diya.gowda34@sample.in,+91 7656998124,913744661315,03-11-2002,"116 Brigade Road, Hyderabad",701574332654,,Male,60,793000
+C1083,Meera Gowda,meera.gowda21@mail.test,8546272321,330000915860,05-10-2003,"120 Church Street, Pune",890272243190,Alternate contact: divya.sharma47@demo.org,Male,22,752187
+C1084,Divya Menon,divya.menon53@sample.in,+91 6134568604,3620 6216 7885,17-01-2001,"248 Brigade Road, Hyderabad",276800855920,Call back on 7824399252 after 6pm,Male,51,639862
+C1085,Rahul Shetty,rahul.shetty29@demo.org,8908314405,6867 4245 6229,21-03-1993,"137 MG Road, Pune",892956100142,Call back on 8659737342 after 6pm,Other,27,686341
+C1086,Rahul Kulkarni,rahul.kulkarni6@example.com,+91-60488-14238,6285 6638 5752,10-11-1984,"8 Hosur Road, Pune",179257368565,,Female,33,838985
+C1087,Vivaan Iyer,vivaan.iyer57@sample.in,9498690974,7197 8545 5173,13-03-1999,"82 4th Cross, Chennai",363363597372,,Male,50,913917
+C1088,Vikram Reddy,vikram.reddy35@sample.in,7151266214,258477600839,19-12-1985,"231 Brigade Road, Chennai",666918371818,,Female,66,665308
+C1089,Vikram Rao,vikram.rao40@sample.in,+91 6096689473,934216658552,20-11-1996,"13 Residency Road, Hyderabad",219602694622,Prefers WhatsApp,Female,36,901071
+C1090,Neha Iyer,neha.iyer34@demo.org,9392922240,877529131920,15-09-1983,"19 Hosur Road, Pune",529911973419,Address verified,F,57,915572
+C1091,Kavya Patel,kavya.patel72@demo.org,+91-72137-36772,864427855527,05-10-2003,"122 Outer Ring Road, Hyderabad",277461735201,Call back on 8863251765 after 6pm,Other,26,780356
+C1092,Ishaan Kulkarni,ishaan.kulkarni95@demo.org,+91-85447-25317,9803 5342 5617,14-10-1984,"95 Residency Road, Bengaluru",389801158279,Prefers WhatsApp,F,64,578238
+C1093,Sneha Shetty,sneha.shetty7@sample.in,+91-75628-90182,832988470815,11-07-1979,"49 MG Road, Hyderabad",952558822963,Prefers WhatsApp,Female,62,653788
+C1094,Divya Shetty,divya.shetty94@example.com,7556931857,7944 8121 8285,18-06-1992,"245 Brigade Road, Hyderabad",312532935220,Address verified,Male,61,779963
+C1095,Sneha Gowda,sneha.gowda72@demo.org,+91 7319561201,5974 5383 8356,10-02-1993,"144 Church Street, Chennai",481472026487,Address verified,M,52,851712
+C1096,Rohan Gowda,rohan.gowda6@demo.org,+91 6371904990,667634303849,24-10-1982,"36 MG Road, Pune",356143021540,Alternate contact: arjun.menon90@demo.org,Female,21,929579
+C1097,Vivaan Reddy,vivaan.reddy53@demo.org,+91-91079-59268,4254 6528 9240,21-04-1999,"226 Hosur Road, Hyderabad",197790929231,,Male,38,784659
+C1098,Sneha Menon,sneha.menon95@example.com,7448700579,2236 0249 4126,20-02-2004,"3 Residency Road, Pune",677859075476,,Male,36,884058
+C1099,Divya Iyer,divya.iyer65@sample.in,8207029662,7994 8215 5347,24-06-2000,"184 Brigade Road, Bengaluru",664477687248,,Male,54,623002
+C1100,Rahul Reddy,rahul.reddy52@example.com,+91 7150980852,734084110510,19-12-1993,"245 Residency Road, Chennai",165439421288,Alternate contact: sneha.rao97@demo.org,Male,34,790802
+C1101,Diya Rao,diya.rao40@mail.test,+91-97366-65942,6158 4967 6512,05-08-1998,"57 Brigade Road, Hyderabad",930950879320,VIP customer,Other,41,892004
+C1102,Karthik Nair,karthik.nair88@example.com,+91-95671-21569,715307988101,19-09-1979,"232 Outer Ring Road, Mysuru",847823556587,,Female,38,957912
+C1103,Karthik Shetty,karthik.shetty75@sample.in,+91-69651-75095,9776 8273 3513,15-11-2000,"145 MG Road, Pune",998741050292,Call back on 9490483627 after 6pm,Male,64,551897
+C1104,Aarav Shetty,aarav.shetty28@example.com,+91 6454941605,3124 3057 3564,12-07-1989,"197 Brigade Road, Hyderabad",248345165064,Call back on 9193253475 after 6pm,F,42,810518
+C1105,Kavya Reddy,kavya.reddy23@sample.in,7781531720,2324 7765 8879,27-04-1982,"109 Outer Ring Road, Hyderabad",898327940253,Follow up next week,Female,40,636129
+C1106,Diya Sharma,diya.sharma85@sample.in,6258413465,382037726692,13-08-1982,"63 4th Cross, Bengaluru",354645447539,Prefers WhatsApp,Other,31,518367
+C1107,Rahul Kulkarni,rahul.kulkarni77@demo.org,7324017094,5404 3093 3220,16-01-1986,"174 Hosur Road, Pune",865873132760,Call back on 7672155012 after 6pm,M,60,868742
+C1108,Neha Singh,neha.singh20@demo.org,+91-91974-38548,939622553138,14-07-1992,"235 MG Road, Pune",324433497350,,Other,26,831831
+C1109,Rahul Das,rahul.das11@sample.in,+91-80992-82456,5345 8108 6511,07-10-1998,"155 MG Road, Bengaluru",468967896485,,M,53,662835
+C1110,Meera Sharma,meera.sharma28@mail.test,+91 6801955461,584592070753,13-08-1992,"142 Residency Road, Chennai",664185377645,VIP customer,M,40,734283
+C1111,Divya Rao,divya.rao13@sample.in,8981754902,757178564680,09-09-2004,"190 Brigade Road, Bengaluru",315402966821,VIP customer,Other,55,838691
+C1112,Rahul Nair,rahul.nair49@mail.test,+91-95912-47918,7679 5321 9946,16-03-2004,"44 Brigade Road, Pune",185240916199,Address verified,Other,59,568674
+C1113,Vivaan Sharma,vivaan.sharma53@mail.test,+91-70729-80019,4258 0906 6064,16-11-1990,"164 4th Cross, Pune",114651587328,Follow up next week,Male,18,972305
+C1114,Aarav Menon,aarav.menon93@demo.org,+91-80184-06723,825382283325,07-10-1991,"135 Brigade Road, Mysuru",537205922440,,Male,70,735038
+C1115,Ananya Patel,ananya.patel52@sample.in,7748651792,612231496094,21-01-1997,"142 Hosur Road, Bengaluru",961763314712,Call back on 9404982743 after 6pm,Female,23,856873
+C1116,Rahul Kulkarni,rahul.kulkarni13@example.com,+91-72270-07332,954593116886,22-01-1980,"72 Outer Ring Road, Pune",257140123551,,F,38,527152
+C1117,Ishaan Reddy,ishaan.reddy39@mail.test,+91 7608485104,720357050511,08-02-1985,"14 MG Road, Hyderabad",459804678633,Address verified,Other,67,978067
+C1118,Aarav Das,aarav.das35@sample.in,+91 9244961731,8233 2960 9289,03-05-1979,"64 4th Cross, Bengaluru",449565764637,Call back on 8856905222 after 6pm,Female,63,696948
+C1119,Kavya Reddy,kavya.reddy12@example.com,+91 8477531502,617618949780,12-09-1977,"27 MG Road, Bengaluru",417880582454,Alternate contact: vikram.menon72@sample.in,Other,56,750493
+C1120,Neha Singh,neha.singh11@mail.test,+91 7735852444,4349 5605 1895,16-02-1986,"71 Hosur Road, Chennai",317396937096,Alternate contact: rohan.reddy22@sample.in,Male,33,877831
+C1121,Vikram Reddy,vikram.reddy18@demo.org,+91 6424871030,8615 4491 3031,20-12-1981,"35 Residency Road, Chennai",452052994127,Follow up next week,Female,38,652198
+C1122,Meera Shetty,meera.shetty89@sample.in,+91 7349917685,648932283790,06-11-1999,"52 Outer Ring Road, Pune",581936770150,,Other,19,892847
+C1123,Meera Shetty,meera.shetty9@sample.in,+91-91494-42440,635399211365,15-10-1990,"203 Hosur Road, Bengaluru",863944259782,,Other,43,966402
+C1124,Neha Menon,neha.menon5@demo.org,6117434526,786613764292,26-07-1978,"248 Church Street, Chennai",922532091268,Ref no 4521 logged,Male,24,729098
+C1125,Sneha Rao,sneha.rao48@sample.in,+91-98292-96154,464530005238,15-04-1991,"90 Residency Road, Chennai",892155890847,Alternate contact: ananya.reddy94@mail.test,Female,40,812795
+C1126,Vikram Patel,vikram.patel9@demo.org,+91-68699-30526,387372854495,17-03-1992,"43 4th Cross, Mysuru",610922706541,,Female,39,955885
+C1127,Sneha Singh,sneha.singh81@mail.test,+91-76877-08952,816990133955,07-05-1999,"100 MG Road, Mysuru",976610350084,Ref no 4521 logged,M,69,575674
+C1128,Priya Patel,priya.patel42@mail.test,+91 9122358216,9456 9462 3434,12-08-1994,"151 MG Road, Chennai",192729067059,,Female,70,780541
+C1129,Rohan Patel,rohan.patel16@mail.test,8125572934,7201 5815 6474,06-08-1995,"148 Hosur Road, Hyderabad",637587593967,VIP customer,Other,62,672733
+C1130,Meera Iyer,meera.iyer24@demo.org,9665086407,7408 8130 0613,14-11-1990,"130 4th Cross, Hyderabad",190912661480,Call back on 9602994164 after 6pm,Female,63,864054
+C1131,Aarav Nair,aarav.nair38@example.com,+91-82414-23782,6792 7359 1738,25-09-2001,"147 MG Road, Chennai",584124333765,Prefers WhatsApp,Male,52,599615
+C1132,Karthik Singh,karthik.singh14@mail.test,8939319914,948373423053,07-12-1993,"199 Church Street, Mysuru",282227589968,Prefers WhatsApp,M,40,982938
+C1133,Rohan Nair,rohan.nair27@example.com,+91 8571532152,4416 7859 3544,05-07-2004,"231 4th Cross, Bengaluru",245453700878,Follow up next week,Male,35,691937
+C1134,Sneha Iyer,sneha.iyer92@demo.org,+91-78176-26034,8192 8207 8420,21-02-1987,"97 Hosur Road, Bengaluru",599801354952,,Other,65,791056
+C1135,Divya Patel,divya.patel75@example.com,+91 6784832186,7122 4111 3098,11-09-1993,"83 Church Street, Chennai",851164674526,Alternate contact: neha.nair64@demo.org,Female,54,845054
+C1136,Vivaan Sharma,vivaan.sharma13@sample.in,6133398648,9196 0730 4802,21-06-1983,"224 Residency Road, Bengaluru",788897041424,Alternate contact: rohan.das39@mail.test,Male,41,606787
+C1137,Meera Shetty,meera.shetty90@mail.test,9703821904,3257 7446 9439,01-12-1985,"175 Hosur Road, Bengaluru",624553698063,Call back on 7557749020 after 6pm,F,25,890968
+C1138,Ananya Nair,ananya.nair50@example.com,+91 6110811807,742438524597,03-09-1993,"165 4th Cross, Mysuru",891782322234,VIP customer,Male,57,657684
+C1139,Karthik Das,karthik.das96@mail.test,+91-96615-06578,929463314696,19-12-1987,"36 Church Street, Bengaluru",401711945117,,Male,45,718327
+C1140,Ananya Nair,ananya.nair71@demo.org,+91-69104-17210,669601859380,26-04-1990,"76 4th Cross, Bengaluru",755575571743,,Female,25,665481
+C1141,Ananya Menon,ananya.menon2@demo.org,+91 8141715543,874583878616,01-10-1977,"245 Church Street, Bengaluru",168386957333,,Male,34,605220
+C1142,Ishaan Menon,ishaan.menon37@sample.in,+91 9753563434,375765530721,18-06-1987,"250 Church Street, Mysuru",579742159924,Alternate contact: meera.reddy66@mail.test,Other,58,540654
+C1143,Sneha Sharma,sneha.sharma32@example.com,+91 9124539647,291522703926,12-09-1991,"3 Brigade Road, Hyderabad",239036120536,Call back on 7753229478 after 6pm,F,70,721884
+C1144,Arjun Shetty,arjun.shetty16@example.com,+91 8866625455,6108 3987 1327,16-08-1991,"148 4th Cross, Bengaluru",504443675955,,Male,21,874302
+C1145,Priya Gowda,priya.gowda99@example.com,+91-62452-47378,237062496699,28-01-1992,"236 Brigade Road, Mysuru",371965068780,Call back on 8411221078 after 6pm,F,63,829427
+C1146,Neha Shetty,neha.shetty41@demo.org,+91 6613682070,392350562630,11-02-1992,"222 Residency Road, Chennai",719727682003,Alternate contact: vivaan.singh9@sample.in,Female,18,726302
+C1147,Meera Shetty,meera.shetty80@mail.test,+91-93954-30792,929102208594,11-01-1999,"163 Church Street, Bengaluru",680701888065,Alternate contact: neha.sharma30@demo.org,M,42,713624
+C1148,Sneha Singh,sneha.singh63@example.com,+91 7764131026,3723 5088 9773,19-02-1991,"96 Hosur Road, Bengaluru",725312430866,,Female,58,809808
+C1149,Vivaan Singh,vivaan.singh85@mail.test,+91 7313184748,7961 7699 9395,05-10-1978,"60 MG Road, Mysuru",445599075156,Address verified,Female,24,658925
