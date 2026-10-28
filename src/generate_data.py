@@ -28,6 +28,22 @@ def dob(r): return f"{r.randint(1,28):02d}-{r.randint(1,12):02d}-{r.randint(1975
 def addr(r): return f"{r.randint(1,250)} {r.choice(STREETS)}, {r.choice(CITIES)}"
 def order_ref(r): return str(r.randint(10**11, 10**12 - 1))      # decoy: 12 digits, not PII
 def tracking(r): return str(r.randint(10**15, 10**16 - 1))       # decoy: 16 digits, not PII
+def gender(r): return r.choice(["Male", "Female", "Male", "Female", "Other", "M", "F"])
+def age(r): return str(r.randint(18, 72))
+def pin(r): return f"{r.choice('56789')}{r.randint(0, 99999):05d}"
+def geo(r): return f"{r.uniform(8, 30):.4f}, {r.uniform(70, 88):.4f}"
+def _letters(r, k): return "".join(r.choice("ABCDEFGHIJKLMNOPQRSTUVWXYZ") for _ in range(k))
+def pan(r): return _letters(r, 3) + "P" + _letters(r, 1) + f"{r.randint(0, 9999):04d}" + _letters(r, 1)
+def pan_decoy(r): return _letters(r, 3) + "X" + _letters(r, 1) + f"{r.randint(0, 9999):04d}" + _letters(r, 1)   # 4th letter invalid
+def passport(r): return r.choice("ABCDEFGHJKLMNPRSTUVWY") + str(r.randint(1, 9)) + f"{r.randint(0, 999999):06d}"
+def voter(r): return _letters(r, 3) + f"{r.randint(0, 9999999):07d}"
+def dl(r):
+    base = f"{r.choice(['KA', 'TN', 'MH', 'DL', 'AP'])}{r.randint(1, 60):02d}"
+    tail = f"{r.randint(1995, 2024)}{r.randint(0, 9999999):07d}"
+    return r.choice([base + tail, f"{base} {tail}"])
+def acct(r): return str(r.randint(10**10, 10**r.choice([12, 13, 14]) - 1))
+def ifsc(r): return r.choice(["SBIN", "HDFC", "ICIC", "UTIB", "CNRB"]) + "0" + "".join(r.choice("0123456789ABCDEFGHJKLMNPQRSTUVWXYZ") for _ in range(6))
+def upi(r, n): return f"{n.lower().replace(' ', '.')}{r.randint(1, 99)}@{r.choice(['oksbi', 'okaxis', 'ybl', 'paytm', 'okhdfcbank'])}"
 def txn(r): return f"TXN{r.randint(10**8,10**9-1)}"
 
 
@@ -50,12 +66,14 @@ def build(out_dir="data", seed=42, n=150):
             alt = email(r, name(r)); note = f"Alternate contact: {alt}"; L("customers.csv", i, "notes", "email")
         elif k < 0.6: note = r.choice(["Prefers WhatsApp", "VIP customer", "Address verified", "Ref no 4521 logged", "Follow up next week"])
         a, d_ = addr(r), dob(r)
-        rows.append([f"C{1000+i}", nm, em, ph, ad, d_, a, order_ref(r), note])
-        L("customers.csv", i, "full_name", "contextual_pii"); L("customers.csv", i, "email", "email")
+        gd, ag, pc = gender(r), age(r), pin(r)
+        rows.append([f"C{1000+i}", nm, em, ph, ad, d_, a, order_ref(r), note, gd, ag, pc])
+        L("customers.csv", i, "full_name", "name"); L("customers.csv", i, "email", "email")
         L("customers.csv", i, "mobile", "phone"); L("customers.csv", i, "aadhaar_no", "aadhaar")
-        L("customers.csv", i, "dob", "contextual_pii"); L("customers.csv", i, "address", "contextual_pii")
+        L("customers.csv", i, "dob", "dob"); L("customers.csv", i, "address", "address")
+        L("customers.csv", i, "gender", "gender"); L("customers.csv", i, "age", "age"); L("customers.csv", i, "pin_code", "pin_code")
     with open(os.path.join(syn, "customers.csv"), "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f); w.writerow(["customer_id","full_name","email","mobile","aadhaar_no","dob","address","order_ref","notes"]); w.writerows(rows)
+        w = csv.writer(f); w.writerow(["customer_id","full_name","email","mobile","aadhaar_no","dob","address","order_ref","notes","gender","age","pin_code"]); w.writerows(rows)
 
     # ---- payments.csv
     rows = []
@@ -66,13 +84,40 @@ def build(out_dir="data", seed=42, n=150):
     with open(os.path.join(syn, "payments.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f); w.writerow(["txn_id","card_number","tracking_no","amount","contact_email"]); w.writerows(rows)
 
+    # ---- kyc.csv (government identifiers) + look-alikes
+    rows = []
+    for i in range(n):
+        has_pp = r.random() < 0.7
+        rows.append([f"C{1000+i}", pan(r), passport(r) if has_pp else "", voter(r), dl(r), pan_decoy(r), "T" + str(r.randint(1000000, 9999999))])
+        L("kyc.csv", i, "pan_no", "pan"); L("kyc.csv", i, "voter_id", "voter_id"); L("kyc.csv", i, "dl_no", "driving_licence")
+        if has_pp: L("kyc.csv", i, "passport_no", "passport")
+    with open(os.path.join(syn, "kyc.csv"), "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f); w.writerow(["customer_id","pan_no","passport_no","voter_id","dl_no","employee_code","ticket_ref"]); w.writerows(rows)
+
+    # ---- finance.csv (bank account, IFSC, UPI) + look-alikes
+    rows = []
+    for i in range(n):
+        nm = name(r)
+        rows.append([f"C{1000+i}", acct(r), ifsc(r), upi(r, nm), order_ref(r), f"BR-{r.randint(1000, 9999)}"])
+        L("finance.csv", i, "acct_no", "bank_account"); L("finance.csv", i, "ifsc_code", "ifsc"); L("finance.csv", i, "upi_id", "upi")
+    with open(os.path.join(syn, "finance.csv"), "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f); w.writerow(["customer_id","acct_no","ifsc_code","upi_id","invoice_no","branch_ref"]); w.writerows(rows)
+
+    # ---- locations.csv (geo, PIN, address) + look-alikes
+    rows = []
+    for i in range(n):
+        rows.append([f"V{i}", geo(r), pin(r), addr(r), f"{r.uniform(100, 400):.3f}, {r.uniform(200, 500):.3f}", str(r.randint(1, 120)), str(r.randint(100000, 999999))])
+        L("locations.csv", i, "geo_point", "geo"); L("locations.csv", i, "pin_code", "pin_code"); L("locations.csv", i, "address", "address")
+    with open(os.path.join(syn, "locations.csv"), "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f); w.writerow(["visit_id","geo_point","pin_code","address","range_km","page_no","dispatch_code"]); w.writerows(rows)
+
     # ---- legacy_export.csv : unhelpful column names, no hints
     rows = []
     for i in range(n // 2):
         nm = name(r)
         rows.append([f"R{i}", aadhaar(r), phone(r), nm, r.choice(["A","B","C"])])
         L("legacy_export.csv", i, "col_b", "aadhaar"); L("legacy_export.csv", i, "col_c", "phone")
-        L("legacy_export.csv", i, "col_d", "contextual_pii")  # present in data, but no column hint -> expected miss
+        L("legacy_export.csv", i, "col_d", "name")  # present in data, but no column hint -> expected miss
     with open(os.path.join(syn, "legacy_export.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f); w.writerow(["col_a","col_b","col_c","col_d","col_e"]); w.writerows(rows)
 
@@ -80,15 +125,16 @@ def build(out_dir="data", seed=42, n=150):
     db = os.path.join(syn, "demo.db")
     if os.path.exists(db): os.remove(db)
     con = sqlite3.connect(db); cur = con.cursor()
-    cur.execute("CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT, email TEXT, phone TEXT, aadhaar TEXT, signup_ts TEXT)")
+    cur.execute("CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT, email TEXT, phone TEXT, aadhaar TEXT, signup_ts TEXT, gender TEXT, age INTEGER, pincode TEXT, upi_id TEXT)")
     cur.execute("CREATE TABLE orders (order_id INTEGER PRIMARY KEY, user_id INTEGER, order_ref TEXT, amount REAL, is_paid INTEGER)")
     cur.execute("CREATE TABLE audit_log (id INTEGER PRIMARY KEY, message TEXT)")
     cur.execute("CREATE TABLE products (sku TEXT, title TEXT, price REAL)")
     for i in range(n):
         nm = name(r)
-        cur.execute("INSERT INTO users VALUES (?,?,?,?,?,?)", (i+1, nm, email(r, nm), phone(r), aadhaar(r), f"2025-{r.randint(1,12):02d}-{r.randint(1,28):02d} 10:00:00"))
-        L("demo.db:users", i, "name", "contextual_pii"); L("demo.db:users", i, "email", "email")
+        cur.execute("INSERT INTO users VALUES (?,?,?,?,?,?,?,?,?,?)", (i+1, nm, email(r, nm), phone(r), aadhaar(r), f"2025-{r.randint(1,12):02d}-{r.randint(1,28):02d} 10:00:00", gender(r), int(age(r)), pin(r), upi(r, nm)))
+        L("demo.db:users", i, "name", "name"); L("demo.db:users", i, "email", "email")
         L("demo.db:users", i, "phone", "phone"); L("demo.db:users", i, "aadhaar", "aadhaar")
+        L("demo.db:users", i, "gender", "gender"); L("demo.db:users", i, "age", "age"); L("demo.db:users", i, "pincode", "pin_code"); L("demo.db:users", i, "upi_id", "upi")
         cur.execute("INSERT INTO orders VALUES (?,?,?,?,?)", (i+1, r.randint(1, n), order_ref(r), r.randint(100, 9999)/10, r.randint(0, 1)))
     for i in range(80):
         k = r.random()
@@ -112,6 +158,17 @@ def build(out_dir="data", seed=42, n=150):
         "demo.db:users.name": {"purpose": "Account management", "retention": "Account lifetime"},
         "demo.db:users.email": {"purpose": "Account management", "retention": "Account lifetime"},
         "demo.db:users.phone": {"purpose": "Two-factor authentication", "retention": "Account lifetime"},
+        "customers.csv.gender": {"purpose": "Personalisation", "retention": "24 months"},
+        "customers.csv.age": {"purpose": "Age verification", "retention": "24 months"},
+        "customers.csv.pin_code": {"purpose": "Delivery", "retention": "24 months"},
+        "kyc.csv.pan_no": {"purpose": "Tax reporting", "retention": "7 years"},
+        "kyc.csv.passport_no": {"purpose": "Identity proof"},                              # partial: no retention
+        "kyc.csv.dl_no": {"purpose": "Identity proof", "retention": "5 years"},
+        "finance.csv.acct_no": {"purpose": "Refund payout", "retention": "7 years"},
+        "finance.csv.ifsc_code": {"purpose": "Refund payout", "retention": "7 years"},
+        "locations.csv.address": {"purpose": "Site visits", "retention": "12 months"},
+        "locations.csv.pin_code": {"purpose": "Site visits", "retention": "12 months"},
+        # undeclared on purpose (orphans): kyc.voter_id, finance.upi_id, locations.geo_point, demo.db users gender/age/pincode/upi_id
         # legacy_export.csv, demo.db:users.aadhaar, notes, audit_log.message: undeclared -> orphan
     }
     with open(os.path.join("config", "declarations.json"), "w", encoding="utf-8") as f: json.dump(decl, f, indent=2)

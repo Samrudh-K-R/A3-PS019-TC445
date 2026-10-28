@@ -33,7 +33,7 @@ def scan(csv_dir, db_path, rules, declarations):
             if share < ratio:
                 continue
             findings.append({
-                "source": src, "column": col, "class": cls, "class_label": det.classes[cls]["label"],
+                "source": src, "column": col, "category": det.classes[cls]["category"], "class": cls, "class_label": det.classes[cls]["label"],
                 "matches": len(confs), "non_empty_cells": total, "match_share": round(share, 3),
                 "confidence": round(sum(confs) / len(confs), 2),
                 "column_name_hint": det.hint_match(cls, col),
