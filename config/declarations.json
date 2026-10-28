@@ -40,5 +40,44 @@
   "demo.db:users.phone": {
     "purpose": "Two-factor authentication",
     "retention": "Account lifetime"
+  },
+  "customers.csv.gender": {
+    "purpose": "Personalisation",
+    "retention": "24 months"
+  },
+  "customers.csv.age": {
+    "purpose": "Age verification",
+    "retention": "24 months"
+  },
+  "customers.csv.pin_code": {
+    "purpose": "Delivery",
+    "retention": "24 months"
+  },
+  "kyc.csv.pan_no": {
+    "purpose": "Tax reporting",
+    "retention": "7 years"
+  },
+  "kyc.csv.passport_no": {
+    "purpose": "Identity proof"
+  },
+  "kyc.csv.dl_no": {
+    "purpose": "Identity proof",
+    "retention": "5 years"
+  },
+  "finance.csv.acct_no": {
+    "purpose": "Refund payout",
+    "retention": "7 years"
+  },
+  "finance.csv.ifsc_code": {
+    "purpose": "Refund payout",
+    "retention": "7 years"
+  },
+  "locations.csv.address": {
+    "purpose": "Site visits",
+    "retention": "12 months"
+  },
+  "locations.csv.pin_code": {
+    "purpose": "Site visits",
+    "retention": "12 months"
   }
 }
