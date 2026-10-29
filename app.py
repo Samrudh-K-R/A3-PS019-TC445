@@ -111,7 +111,9 @@ with t1:
     else:
         st.write("No personal-data columns found.")
 with t2:
-    gaps = inv[inv["link_status"] != "matched"] if len(inv) else inv
+    gaps = inv[inv["link_status"] != "matched"].copy() if len(inv) else inv
+    if len(gaps):
+        gaps["category"] = gaps["category"].map(NAMES)
     st.write("Columns where personal data was found but the written purpose and/or retention is missing. "
              "**orphan** = nothing written, **partial** = one of the two is missing.")
     st.dataframe(gaps, width="stretch", hide_index=True)
