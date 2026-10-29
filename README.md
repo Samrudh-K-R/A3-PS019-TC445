@@ -20,7 +20,7 @@ AIORI Hackathon 3 | Problem PS-019 (Cybersecurity) | PES University, Electronic 
 |---|---|
 | GitHub repository | https://github.com/aiori-hackathon/A3-PS019-TC445 |
 | Team introduction video (YouTube) | https://youtu.be/7M6-GzHDf4o?si=cfKMvYu9hvg11phD |
-| Live web demo (hosted) | `https://subnet-sovereigns-a3-ps019-tc445.streamlit.app/` |
+| Live web demo (hosted) | https://subnet-sovereigns-a3-ps019-tc445.streamlit.app/ |
 | Project report (PDF) | [`docs/A3-PS019-TC445.pdf`](docs/A3-PS019-TC445.pdf) |
 
 ## What it does
